@@ -1,5 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
+<!-- Test all in Chrome --> 
 <suite name="Test All in Chrome" verbose="1" parallel="tests">
 	<test name="Search on Chrome">
 	<parameter name = "browser" value="GH"></parameter>
