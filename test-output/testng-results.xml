@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="0" total="5" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test All in Chrome" duration-ms="140" started-at="2014-12-18T17:07:51Z" finished-at="2014-12-18T17:07:51Z">
+    <groups>
+    </groups>
+    <test name="Search on Chrome" duration-ms="140" started-at="2014-12-18T17:07:51Z" finished-at="2014-12-18T17:07:51Z">
+      <class name="com.TestNG.JobSearch.MonsterSearchTwo">
+        <test-method status="SKIP" signature="testMonsterSearchTwo()[pri:0, instance:com.TestNG.JobSearch.MonsterSearchTwo@4b5ed12c]" name="testMonsterSearchTwo" duration-ms="1" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonsterSearchTwo -->
+        <test-method status="SKIP" signature="openBroswer(java.lang.String)[pri:0, instance:com.TestNG.JobSearch.MonsterSearchTwo@4b5ed12c]" name="openBroswer" is-config="true" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBroswer -->
+      </class> <!-- com.TestNG.JobSearch.MonsterSearchTwo -->
+      <class name="com.TestNG.JobSearch.CareerbuilderSearch">
+        <test-method status="SKIP" signature="openBroswer(java.lang.String)[pri:0, instance:com.TestNG.JobSearch.CareerbuilderSearch@9da63c3]" name="openBroswer" is-config="true" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBroswer -->
+        <test-method status="SKIP" signature="testCareerbuilderSearch()[pri:0, instance:com.TestNG.JobSearch.CareerbuilderSearch@9da63c3]" name="testCareerbuilderSearch" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCareerbuilderSearch -->
+      </class> <!-- com.TestNG.JobSearch.CareerbuilderSearch -->
+      <class name="com.TestNG.JobSearch.MonsterSearch">
+        <test-method status="SKIP" signature="openBroswer(java.lang.String)[pri:0, instance:com.TestNG.JobSearch.MonsterSearch@57502283]" name="openBroswer" is-config="true" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBroswer -->
+        <test-method status="SKIP" signature="testMonsterSearch()[pri:0, instance:com.TestNG.JobSearch.MonsterSearch@57502283]" name="testMonsterSearch" duration-ms="1" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonsterSearch -->
+      </class> <!-- com.TestNG.JobSearch.MonsterSearch -->
+      <class name="com.TestNG.JobSearch.LinkedInSearch">
+        <test-method status="SKIP" signature="openBroswer(java.lang.String)[pri:0, instance:com.TestNG.JobSearch.LinkedInSearch@3df6c65c]" name="openBroswer" is-config="true" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBroswer -->
+        <test-method status="SKIP" signature="testLinkedIn()[pri:0, instance:com.TestNG.JobSearch.LinkedInSearch@3df6c65c]" name="testLinkedIn" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkedIn -->
+      </class> <!-- com.TestNG.JobSearch.LinkedInSearch -->
+      <class name="com.TestNG.JobSearch.DiceSearch">
+        <test-method status="FAIL" signature="openBroswer(java.lang.String)[pri:0, instance:com.TestNG.JobSearch.DiceSearch@1458e1cc]" name="openBroswer" is-config="true" duration-ms="0" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GH]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: c:\Users\Dima\workspace\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: c:\Users\Dima\workspace\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at com.TestNG.JobSearch.Browser.openBroswer(Browser.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBroswer -->
+        <test-method status="SKIP" signature="testDiceSearch()[pri:0, instance:com.TestNG.JobSearch.DiceSearch@1458e1cc]" name="testDiceSearch" duration-ms="1" started-at="2014-12-18T11:07:51Z" finished-at="2014-12-18T11:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDiceSearch -->
+      </class> <!-- com.TestNG.JobSearch.DiceSearch -->
+    </test> <!-- Search on Chrome -->
+  </suite> <!-- Test All in Chrome -->
+</testng-results>

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Test All in Firefox" verbose="1" parallel="tests">
+	<test name="Search on Firefox">
+	<parameter name = "browser" value="FF"></parameter>
+		<classes>
+			<class name="com.TestNG.JobSearch.DiceSearch" />
+			<class name="com.TestNG.JobSearch.CareerbuilderSearch" />
+			<class name="com.TestNG.JobSearch.LinkedInSearch" />
+			<class name="com.TestNG.JobSearch.MonsterSearch" />
+			<class name="com.TestNG.JobSearch.MonsterSearchTwo" />
+		</classes>
+	</test>
+	
+</suite>
