@@ -2,7 +2,8 @@
  
 <suite name="Test All in Firefox" verbose="1" parallel="tests">
 	<test name="Search on Firefox">
-	<parameter name = "browser" value="FF"></parameter>
+		<parameter name = "browser" value="FF"></parameter>
+		<parameter name = "user" value="olya"></parameter>
 		<classes>
 			<class name="com.TestNG.JobSearch.DiceSearch" />
 			<class name="com.TestNG.JobSearch.CareerbuilderSearch" />

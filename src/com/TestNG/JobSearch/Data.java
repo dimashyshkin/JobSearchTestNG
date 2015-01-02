@@ -1,9 +1,6 @@
 package com.TestNG.JobSearch;
 
 public class Data {
-
-	static String user;
-	
 	static String dima_login;
 	static String dima_password;
 	static String dima_zipcode;
@@ -62,16 +59,13 @@ public class Data {
 	
 
     static {
-    	user = "dima";
-    //	user = "olya";
-    	
     	dima_login = "dimashyshkin@hotmail.com";
     	dima_password = "dima8439";
     	dima_zipcode = "75093";
     	
     	olya_login = "olhashyshkina@gmail.com";
     	olya_password = "28514500olya";
-    	olya_zipcode = "33762";
+    	olya_zipcode = "75093";
     	
     	//DICE
     	dima_dice_keywords = "(qa OR sqa OR tester OR test OR quality OR selenium OR webdriver OR automation OR SDET OR API)";
@@ -106,10 +100,10 @@ public class Data {
     	dima_careerbuilder_expectedTitle = "Keywords Jobs in " + dima_careerbuilder_city1 + ", " + dima_careerbuilder_city2 + " and " + dima_careerbuilder_city3 + " on CareerBuilder.com";
     			
     	olya_careerbuilder_keywords = "qa, sqa, tester, test, quality";
-    	olya_careerbuilder_city1 = "Clearwater, FL";
-    	olya_careerbuilder_city2 = "Tampa, FL";
-    	olya_careerbuilder_city3 = "St Petersburg, FL";
-    	olya_careerbuilder_salary = "$40,000";
+    	olya_careerbuilder_city1 = "Plano, TX";
+    	olya_careerbuilder_city2 = "Richardson, TX";
+    	olya_careerbuilder_city3 = "Carrollton, TX";
+    	olya_careerbuilder_salary = "$30,000";
     	olya_careerbuilder_expectedTitle = "Keywords Jobs in " + olya_careerbuilder_city1 + ", " + olya_careerbuilder_city2 + " and " + olya_careerbuilder_city3 + " on CareerBuilder.com";
     	
     	//LINKEDIN

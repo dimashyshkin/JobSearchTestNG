@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.openqa.selenium.*;
@@ -23,10 +24,9 @@ public class MonsterSearchTwo extends Browser {
 	private String keyword6;
 	private String expectedTitle;
 
+	@Parameters("user")
 	@Test
-	public void testMonsterSearchTwo() throws Exception {
-		//User
-		user = Data.user;
+	public void testMonsterSearchTwo(String user) throws Exception {
 		if (user.equals("dima")) {
 			login = Data.dima_login;
 			password = Data.dima_password;

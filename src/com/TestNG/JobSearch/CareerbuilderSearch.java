@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 
@@ -24,10 +25,9 @@ public class CareerbuilderSearch extends Browser {
 	private String city3;
 	private String salary;
 
+	@Parameters("user")
 	@Test
-	public void testCareerbuilderSearch() throws Exception {
-		//User
-		user = Data.user;
+	public void testCareerbuilderSearch(String user) throws Exception {
 		if (user.equals("dima")) {
 			login = Data.dima_login;
 			password = Data.dima_password;

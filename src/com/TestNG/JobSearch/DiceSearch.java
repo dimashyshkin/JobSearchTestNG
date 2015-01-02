@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 
@@ -22,10 +23,9 @@ public class DiceSearch extends Browser{
 	private String zipcode;
 	private String expectedTitle;
 
+	@Parameters("user")
 	@Test
-	public void testDiceSearch() throws Exception {
-		//User
-		user = Data.user;
+	public void testDiceSearch(String user) throws Exception {
 		if (user.equals("dima")) {
 			System.out.println(ourBrowser +": Search for Dima");
 			login = Data.dima_login;
@@ -47,7 +47,7 @@ public class DiceSearch extends Browser{
 		
 		System.out.println(ourBrowser +": Open and login Dice");
 		driver.get("http://www.dice.com/");
-		driver.findElement(By.cssSelector("#Login_1 > span")).click();
+		driver.findElement(By.xpath("//a[@id='Login_1']")).click();
 		driver.findElement(By.id("Email_1")).clear();
 		driver.findElement(By.id("Email_1")).sendKeys(login);
 		driver.findElement(By.id("Password_1")).clear();
@@ -90,7 +90,7 @@ public class DiceSearch extends Browser{
 			driver.findElement(By.xpath("//button[@class='close']")).click();
 		}
 	}
-
+	
 	private boolean isElementPresent(By by) {
 	// Changed implicitlyWait for this statement, because I dont need to wait for 60 seconds here. 
 	// If I use it for 'Wait for element NOT present', it will take just 1 second to throw exception, not 60

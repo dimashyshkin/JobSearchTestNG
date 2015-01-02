@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.openqa.selenium.*;
@@ -23,10 +24,9 @@ public class LinkedInSearch extends Browser {
 	private String zipcode;
 	private String expectedResult;
 
+	@Parameters("user")
 	@Test
-	public void testLinkedIn() throws Exception {
-		//User
-		user = Data.user;
+	public void testLinkedIn(String user) throws Exception {
 		if (user.equals("dima")) {
 			login = Data.dima_login;
 			password = Data.dima_password;
