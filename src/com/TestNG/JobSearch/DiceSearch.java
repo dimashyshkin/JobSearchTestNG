@@ -47,19 +47,19 @@ public class DiceSearch extends Browser{
 		
 		System.out.println(ourBrowser +": Open and login Dice");
 		driver.get("http://www.dice.com/");
-		driver.findElement(By.xpath("//a[@id='Login_1']")).click();
+		driver.findElement(By.xpath("//li[@class='logindd dropdown']/a")).click();
 		driver.findElement(By.id("Email_1")).clear();
 		driver.findElement(By.id("Email_1")).sendKeys(login);
 		driver.findElement(By.id("Password_1")).clear();
 		driver.findElement(By.id("Password_1")).sendKeys(password);
-		driver.findElement(By.cssSelector("#LoginBtn_1 > span")).click();
+		driver.findElement(By.id("LoginBtn_1")).click();
 
 		System.out.println(ourBrowser +": Submit search");
-		driver.findElement(By.xpath("(//div[@id='title']/a)")).click();
+		//driver.findElement(By.xpath("(//div[@id='title']/a)")).click();
 		driver.findElement(By.linkText("Advanced Job Search")).click();
-		driver.findElement(By.id("searchTerms")).clear();
-		driver.findElement(By.id("searchTerms")).sendKeys(keywords);
-		new Select(driver.findElement(By.id("matchMode"))).selectByVisibleText("Boolean");
+		driver.findElement(By.id("for_one")).clear();
+		driver.findElement(By.id("for_one")).sendKeys(keywords);
+		//new Select(driver.findElement(By.id("matchMode"))).selectByVisibleText("Boolean");
 		driver.findElement(By.id("searchJobTitleOnly1")).click();
 		driver.findElement(By.id("excludeValueList1")).clear();
 		driver.findElement(By.id("excludeValueList1")).sendKeys("manager");

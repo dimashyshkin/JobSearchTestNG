@@ -71,7 +71,7 @@ public class Data {
     	dima_dice_keywords = "(qa OR sqa OR tester OR test OR quality OR selenium OR webdriver OR automation OR SDET OR API)";
     	dima_dice_expectedTitle = "Boolean search Jobs , Employment in " + dima_zipcode + " | Dice.com";
     	
-    	olya_dice_keywords = "(qa OR sqa OR tester OR test OR quality)";
+    	olya_dice_keywords = "(qa sqa tester test quality)";
     	olya_dice_expectedTitle = "Boolean search Jobs , Employment in " + olya_zipcode + " | Dice.com";
 
     	//MONSTER
