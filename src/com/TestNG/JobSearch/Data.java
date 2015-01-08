@@ -15,9 +15,7 @@ public class Data {
 	
 	static String olya_dice_keywords;
 	static String olya_dice_expectedTitle;
-	
-	
-	
+		
 	//MONSTER
 	static String dima_monster_keyword1;
 	static String dima_monster_keyword2;
